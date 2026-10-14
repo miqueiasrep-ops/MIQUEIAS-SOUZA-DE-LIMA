@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+/* 1. Campos com fundo claro possuem texto preto/escuro de alto contraste */
+input[class*="bg-white"],
+input[class*="bg-slate-50"],
+input[class*="bg-slate-100"],
+input[class*="bg-slate-200"],
+input[class*="bg-purple-50"],
+input[class*="bg-gray-50"],
+select[class*="bg-white"],
+select[class*="bg-slate-50"],
+select[class*="bg-slate-100"],
+textarea[class*="bg-white"],
+textarea[class*="bg-slate-50"],
+textarea[class*="bg-slate-100"],
+[class*="bg-white"] input:not([class*="bg-slate-700"]):not([class*="bg-slate-800"]):not([class*="bg-slate-900"]):not([class*="bg-slate-950"]):not(.text-white),
+[class*="bg-white"] select:not([class*="bg-slate-700"]):not([class*="bg-slate-800"]):not([class*="bg-slate-900"]):not([class*="bg-slate-950"]):not(.text-white),
+[class*="bg-white"] textarea:not([class*="bg-slate-700"]):not([class*="bg-slate-800"]):not([class*="bg-slate-900"]):not([class*="bg-slate-950"]):not(.text-white),
+[class*="bg-slate-100"] input:not([class*="bg-slate-700"]):not([class*="bg-slate-800"]):not([class*="bg-slate-900"]):not([class*="bg-slate-950"]):not(.text-white),
+[class*="bg-slate-100"] select:not([class*="bg-slate-700"]):not([class*="bg-slate-800"]):not([class*="bg-slate-900"]):not([class*="bg-slate-950"]):not(.text-white),
+[class*="bg-slate-100"] textarea:not([class*="bg-slate-700"]):not([class*="bg-slate-800"]):not([class*="bg-slate-900"]):not([class*="bg-slate-950"]):not(.text-white) {
+  color: #020617 !important;
+  -webkit-text-fill-color: #020617 !important;
+  font-weight: 600;
+}
+
+/* 2. Campos com fundo escuro (slate-700/800/900/950 ou container escuro) SEMPRE possuem letras brancas nítidas */
+input[class*="bg-slate-700"],
+input[class*="bg-slate-800"],
+input[class*="bg-slate-900"],
+input[class*="bg-slate-950"],
+input[class*="bg-black"],
+input[class*="bg-gray-800"],
+input[class*="bg-gray-900"],
+input.text-white,
+select[class*="bg-slate-700"],
+select[class*="bg-slate-800"],
+select[class*="bg-slate-900"],
+select[class*="bg-slate-950"],
+select.text-white,
+textarea[class*="bg-slate-700"],
+textarea[class*="bg-slate-800"],
+textarea[class*="bg-slate-900"],
+textarea[class*="bg-slate-950"],
+textarea.text-white,
+[class*="bg-slate-900"] input:not([class*="bg-white"]):not([class*="bg-slate-50"]):not([class*="bg-slate-100"]),
+[class*="bg-slate-900"] select:not([class*="bg-white"]):not([class*="bg-slate-50"]):not([class*="bg-slate-100"]),
+[class*="bg-slate-900"] textarea:not([class*="bg-white"]):not([class*="bg-slate-50"]):not([class*="bg-slate-100"]),
+[class*="bg-slate-950"] input:not([class*="bg-white"]):not([class*="bg-slate-50"]):not([class*="bg-slate-100"]),
+[class*="bg-slate-950"] select:not([class*="bg-white"]):not([class*="bg-slate-50"]):not([class*="bg-slate-100"]),
+[class*="bg-slate-950"] textarea:not([class*="bg-white"]):not([class*="bg-slate-50"]):not([class*="bg-slate-100"]),
+[class*="bg-slate-800"] input:not([class*="bg-white"]):not([class*="bg-slate-50"]):not([class*="bg-slate-100"]),
+[class*="bg-slate-800"] select:not([class*="bg-white"]):not([class*="bg-slate-50"]):not([class*="bg-slate-100"]),
+[class*="bg-slate-800"] textarea:not([class*="bg-white"]):not([class*="bg-slate-50"]):not([class*="bg-slate-100"]) {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  font-weight: 500;
+}
+
+/* 3. Opções de Selects */
+select[class*="bg-slate-700"] option,
+select[class*="bg-slate-800"] option,
+select[class*="bg-slate-900"] option,
+select[class*="bg-slate-950"] option,
+select.text-white option {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  background-color: #0f172a !important;
+}
+
+select[class*="bg-white"] option,
+select[class*="bg-slate-50"] option,
+select[class*="bg-slate-100"] option {
+  color: #020617 !important;
+  -webkit-text-fill-color: #020617 !important;
+  background-color: #ffffff !important;
+}
+
+/* 4. Placeholders com alto contraste */
+input[class*="bg-slate-700"]::placeholder,
+input[class*="bg-slate-800"]::placeholder,
+input[class*="bg-slate-900"]::placeholder,
+input[class*="bg-slate-950"]::placeholder,
+textarea[class*="bg-slate-700"]::placeholder,
+textarea[class*="bg-slate-800"]::placeholder,
+textarea[class*="bg-slate-900"]::placeholder,
+textarea[class*="bg-slate-950"]::placeholder {
+  color: #94a3b8 !important;
+  opacity: 1 !important;
+}
+
+input[class*="bg-white"]::placeholder,
+input[class*="bg-slate-50"]::placeholder,
+input[class*="bg-slate-100"]::placeholder,
+textarea[class*="bg-white"]::placeholder,
+textarea[class*="bg-slate-50"]::placeholder,
+textarea[class*="bg-slate-100"]::placeholder {
+  color: #475569 !important;
+  opacity: 1 !important;
+}
